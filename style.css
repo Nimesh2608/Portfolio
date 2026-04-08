@@ -135,9 +135,8 @@ nav {
     color: var(--primary);
     letter-spacing: -0.03em;
     transition: var(--transition);
-    /* ----- FNP moved to the right ----- */
-    position: relative;
-    left: 8px;
+    /* FNP moved to the right */
+    margin-left: 16px;
 }
 
 .logo:hover {
@@ -165,10 +164,9 @@ nav {
     border-bottom-color: var(--primary);
 }
 
-/* ----- Contact link moved to the left ----- */
+/* Contact link moved to the left */
 .nav-links li:last-child a {
-    position: relative;
-    left: -8px;
+    margin-right: 16px;
 }
 
 .mobile-toggle {
