@@ -777,3 +777,137 @@ footer {
         flex-direction: column;
     }
 }
+
+/* ----- EDUCATION PAGE ----- */
+#education-page {
+    padding: 60px 0 80px;
+}
+
+.edu-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 32px 40px;
+    margin-bottom: 40px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.edu-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.edu-icon {
+    font-size: 2.8rem;
+    color: var(--primary);
+    background: var(--surface-light);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.edu-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.edu-institution {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.edu-score {
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.edu-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Certificates */
+.certificates-section {
+    margin-top: 60px;
+    padding-top: 20px;
+}
+
+.certificates-section h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.cert-card {
+    background: var(--surface-light);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 24px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+}
+
+.cert-card i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+}
+
+.cert-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.cert-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.cert-note {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Responsive for education page */
+@media (max-width: 768px) {
+    .edu-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 28px 24px;
+    }
+    .edu-icon {
+        margin-bottom: 16px;
+    }
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
