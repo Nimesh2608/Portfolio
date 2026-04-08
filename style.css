@@ -806,10 +806,10 @@ footer {
     border-radius: 3px;
 }
 
-/* Each timeline item */
+/* Each timeline item - INCREASED gap between items */
 .timeline-item {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 80px;  /* was 60px, now larger gap */
     display: flex;
     gap: 30px;
 }
@@ -840,7 +840,7 @@ footer {
     box-shadow: 0 0 0 6px rgba(59,130,246,0.3);
 }
 
-/* Content card */
+/* Content card - TIGHTER internal spacing */
 .timeline-content {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -850,12 +850,32 @@ footer {
     transition: var(--transition);
 }
 
-.timeline-content:hover {
-    border-color: var(--primary);
-    transform: translateY(-4px);
-    box-shadow: 0 20px 30px -15px rgba(0,0,0,0.4);
+/* Remove extra margins so subtext sits directly below title */
+.timeline-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;   /* reduced from 8px */
+    color: var(--text);
 }
 
+.timeline-institution {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;   /* reduced from 16px */
+    font-weight: 500;
+}
+
+.timeline-grade {
+    margin-bottom: 12px;  /* reduced from 16px */
+}
+
+.timeline-desc {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+/* Rest of styles unchanged */
 .timeline-year {
     display: inline-block;
     font-size: 0.85rem;
@@ -866,23 +886,6 @@ footer {
     border-radius: 30px;
     margin-bottom: 12px;
     letter-spacing: 0.5px;
-}
-
-.timeline-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-    color: var(--text);
-}
-
-.timeline-institution {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    margin-bottom: 16px;
-    font-weight: 500;
-}
-
-.timeline-grade {
-    margin-bottom: 16px;
 }
 
 .grade-badge {
@@ -899,16 +902,14 @@ footer {
     background: linear-gradient(135deg, #10b981, #059669);
 }
 
-.timeline-desc {
-    color: var(--text-secondary);
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .timeline::before {
         left: 20px;
+    }
+    .timeline-item {
+        margin-bottom: 60px;
+        gap: 20px;
     }
     .timeline-icon {
         width: 48px;
@@ -920,6 +921,7 @@ footer {
     }
     .timeline-content h2 {
         font-size: 1.4rem;
+        margin-bottom: 4px;
     }
     .timeline-year {
         font-size: 0.75rem;
