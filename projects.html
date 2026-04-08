@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects · Francis Nimesh Perera</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">FNP.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects-page">
+            <div class="container">
+                <h1 class="page-title">My <span class="highlight">Projects</span></h1>
+                <p class="page-subtitle">Here's what I've been building.</p>
+                
+                <!-- Project 1: AutoFinder -->
+                <div class="project-full">
+                    <div class="project-header">
+                        <h2>AutoFinder</h2>
+                        <p class="project-description">
+                            A full‑stack web app for managing a car dealership's inventory. 
+                            Browse available cars, filter by criteria, and access a secure admin panel to add, edit, or remove listings.
+                        </p>
+                        <div class="project-tags">
+                            <span>React + Vite</span>
+                            <span>Node.js + Express</span>
+                            <span>JSON</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Nimesh2608/AutoFinder" target="_blank" class="btn-outline-small">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://files.fm/u/qwbvz2nafh" target="_blank" class="btn-primary-small">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <h3>Screenshots</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="images/autofinder-main.png" alt="Main Page" loading="lazy">
+                                <span class="caption">Main Page</span>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/autofinder-inventory.png" alt="Inventory" loading="lazy">
+                                <span class="caption">Inventory</span>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/autofinder-login.png" alt="Admin Login" loading="lazy">
+                                <span class="caption">Admin Login</span>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/autofinder-admin.png" alt="Admin Dashboard" loading="lazy">
+                                <span class="caption">Admin Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for future projects -->
+                <div class="future-projects">
+                    <p>🚀 More projects coming soon.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Francis Nimesh Perera · Parma, Italy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
