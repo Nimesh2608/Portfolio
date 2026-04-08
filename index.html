@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <!-- Main Stylesheet -->
@@ -22,7 +22,7 @@
             <div class="nav-container">
                 <a href="index.html" class="logo">FNP.</a>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -38,28 +38,28 @@
         <!-- Hero Section -->
         <section id="hero">
             <div class="container hero-container">
-                <div class="hero-content">
+                <div class="hero-content animate-on-scroll">
                     <h1>Hi, I'm <span class="highlight">Francis Nimesh Perera</span></h1>
                     <p class="subtitle">Full‑stack Developer · University Student</p>
                     <p class="description">
                         I build practical, user‑focused web and mobile applications — from database to interface.
                     </p>
                     <div class="hero-cta">
-                        <a href="projects.html" class="btn btn-primary">View My Work</a>
+                        <a href="projects.html" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
                         <a href="#contact" class="btn btn-outline">Get in Touch</a>
                     </div>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image animate-on-scroll">
                     <img src="images/profile.jpg" alt="Francis Nimesh Perera">
                 </div>
             </div>
         </section>
 
-        <!-- About Section (Preview) -->
+        <!-- About Section -->
         <section id="about">
             <div class="container about-container">
-                <h2>About Me</h2>
-                <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-text animate-on-scroll">
                     <p>
                         I'm a full‑stack developer and university student based in Parma, Italy. 
                         I've been drawn to technology since childhood, always tinkering with small 
@@ -89,12 +89,12 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="container">
-                <h2>Let's Connect</h2>
-                <p class="contact-intro">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-intro animate-on-scroll">
                     I'm currently open to internship and collaboration opportunities. 
                     Feel free to reach out via email or connect with me on LinkedIn.
                 </p>
-                <div class="contact-methods">
+                <div class="contact-methods animate-on-scroll">
                     <a href="mailto:francisnimesh@gmail.com" class="contact-card">
                         <i class="fas fa-envelope"></i>
                         <span>francisnimesh@gmail.com</span>
@@ -117,6 +117,11 @@
             <p>© 2025 Francis Nimesh Perera · Parma, Italy</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
